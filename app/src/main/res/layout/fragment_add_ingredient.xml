@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#00aeff">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/add_ingredient"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:background="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addIngredientName"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLength="30"/>
+
+            <EditText
+                android:id="@+id/addIngredientPrice"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:maxLength="50"/>
+
+            <EditText
+                android:id="@+id/addIngredientDescription"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="@string/desc"
+                android:inputType="text"
+                android:maxLength="100"/>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/add"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="goToAllergiesTab"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+

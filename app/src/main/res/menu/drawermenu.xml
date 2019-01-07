@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_home_screen">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/db" android:title="Dashboard"/>
+        <item android:id="@+id/ml" android:title="Menu List"/>
+        <item android:id="@+id/il" android:title="Ingredient List"/>
+        <item android:id="@+id/gm" android:title="Local stores"/>
+    </group>
+
+    <!--<item android:title="Suggestions">
+        <menu>
+            <item
+                android:title="Menu"
+                android:id="@+id/sMenu"/>
+            <item
+                android:title="Ingredient"
+                android:id="@+id/sIngredient"/>
+        </menu>
+    </item>!-->
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "473497892989",
+    "firebase_url": "https://project-student-weekmenu.firebaseio.com",
+    "project_id": "project-student-weekmenu",
+    "storage_bucket": "project-student-weekmenu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473497892989:android:0233cb1d393f1470",
+        "android_client_info": {
+          "package_name": "com.example.maartenvandenhof.studentmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473497892989-3su7s6nsdk5ghcgudn3s1tj9dakfq9tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maartenvandenhof.studentmenu",
+            "certificate_hash": "d5a6ef76753a6849d8d14ad34f5ea683f8576e17"
+          }
+        },
+        {
+          "client_id": "473497892989-iuibeg9if0tqfcqfivhhrgcuh9mtn33n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASVZB3Ejn-xJM-9-uW2XSzxo2hKExogEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473497892989-iuibeg9if0tqfcqfivhhrgcuh9mtn33n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

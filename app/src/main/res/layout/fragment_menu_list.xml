@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menuList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/add_button_layout"
+    android:layout_margin="20dp"
+    android:text="+"
+    android:textColor="#FFF"
+    android:textSize="20pt"
+    android:onClick="goToAddMenu"/>
+
+
+  
+
+
+    <Button
+        android:id="@+id/ratingbutton"
+        android:layout_width="207.5dp"
+        android:layout_height="50dp"
+        android:onClick="sortRating"
+        android:text="Rating"
+        android:textColor="#FFF"
+        android:background="@drawable/sort_button_layout"
+
+        />
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="205.5dp"
+        android:layout_marginLeft="207.5dp"
+        android:text="Price"
+        android:textColor="#FFF"
+        android:background="@drawable/sort_button_layout"
+        android:onClick="sortPrice"
+
+        />
+
+
+</RelativeLayout>

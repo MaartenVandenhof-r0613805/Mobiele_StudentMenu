@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00aeff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select allergies"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:background="@color/colorPrimary"/>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="30dp"
+                android:background="#FFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="Ingredient"
+                        android:textColor="#00aeff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/ingredientTitle"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="60dp">
+                    <CheckBox android:id="@+id/checkbox_gluten"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gluten"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox
+                        android:id="@+id/checkbox_shellfish"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckboxClicked"
+                        android:paddingRight="20dp"
+                        android:text="Shellfish" />
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/checkbox_fish"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fish"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_peanut"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:text="Peanut"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/checkbox_milk"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Milk"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_nuts"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nuts"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/checkbox_mustard"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mustard"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_lupine"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lupine"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/checkbox_eggs"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Eggs"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_soy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cheese"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/checkbox_celery"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="Celery"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_molluscs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Molluscs"
+                        android:paddingRight="20dp"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:onClick="addIngredientWithAllergies"
+                android:text="Add Ingerdient"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+
